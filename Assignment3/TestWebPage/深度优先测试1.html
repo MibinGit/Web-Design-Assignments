@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zhu Mibin_Assignment3_Depth-first Search</title>
+    <script type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function Graph(v)  //构建图类
+        {
+            this.vertices = v;  //顶点数
+            this.edges = 0;  //边数
+            this.adj = [];  //数组this.adj用来存放每个每个顶点的临接表
+            this.visited = [];  //深度度优先搜索的是否访问标志
+
+            for (var i = 0; i < this.vertices; i++)
+            {
+                this.adj[i] = [];
+                this.visited.push(false);
+            }
+        }
+
+        Graph.prototype =
+        {
+            addEdge: function(a, b)  //添加边
+            {
+                this.adj[a].push(b);  // a、b为节点
+                this.adj[b].push(a);
+                this.edges ++;  //把总边数增加1
+            }
+
+            showGraph: function()  //显示整个表
+            {
+                for (var i = 0; i < this.vertices; i ++)
+                {
+                    console.log(i + '=>');
+                    for (var j = 0; j < this.vertices; j ++)
+                    {
+                        if (this.adj[i][j])
+                        {
+                            console.log(this.adj[i][j]);
+                        }
+                    }
+                }
+            }
+
+            dfs: function(vertice)  //深度优先搜索
+            {
+                this.visited[vertice] = true;
+                console.log(vertice);
+                for (var i = 0; i < this.adj[vertice].length; i++)
+                {
+                    var curVertice = this.adj[vertice][i];
+                    if (!this.visited[curVertice])
+                    {
+                        this.dfs(curVertice);
+                    }
+                }
+            }
+        }
+
+        var graph = new Graph(10);
+        adj[0] = [1,2,5,6];  //用数组创建每一个节点的相邻节点集合
+        adj[1] = [0,3,8,9];
+        adj[2] = [0,4];
+        adj[3] = [1];
+        adj[4] = [2];
+        adj[5] = [0,7];
+        adj[6] = [0];
+        adj[7] = [5];
+        adj[8] = [1];
+        adj[9] = [1];
+
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(0, 5);
+        graph.addEdge(0, 6);
+        graph.addEdge(1, 3);
+        graph.addEdge(1, 8);
+        graph.addEdge(1, 9);
+        graph.addEdge(2, 4);
+        graph.addEdge(5, 7);
+        graph.showGraph();
+
+        graph.dfs(10);
+        doucument.write(graph.dfs(10));
+    </script>
+  </body>
+</html>

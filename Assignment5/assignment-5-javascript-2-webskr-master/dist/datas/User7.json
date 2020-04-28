@@ -1,0 +1,25 @@
+{
+  "user7_todo1" :
+  {
+    "title": "List1",
+    "todoItem": "Do 5100",
+    "author": "HE",
+    "dateProperties": "2018-11-5"
+  },
+
+  "user7_todo2" :
+  {
+    "title": "List2",
+    "todoItem": "Buy Food",
+    "author": "HE",
+    "dateProperties": "2018-11-6"
+  },
+
+  "user7_todo3" :
+  {
+    "title": "List3",
+    "todoItem": "Go library",
+    "author": "HE",
+    "dateProperties": "2018-11-7"
+  }
+}

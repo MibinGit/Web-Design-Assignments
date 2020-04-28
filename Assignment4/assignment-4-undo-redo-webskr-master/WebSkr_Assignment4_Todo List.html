@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "utf-8">
+        <title>WebSkr_Assignment4_Todo List</title>
+        <link rel = "stylesheet" type = "text/css" href = "./src/main.css" media = "screen">
+    </head>
+
+    <body>
+        <div id = "inputDIV" class = "header">
+            <p style = "font-size: 40px;"><b>Todo List</b></p>
+            <input type = "text" id = "Todoinput" placeholder = "Please input your todo list here." class = "input">
+            <button type = "button" onclick = "addTodo()" class = "add">ADD</button>
+        </div>
+        <hr size = "5px" noshade = true />
+
+        <ul id = "mytodoList">
+
+        </ul>
+    </body>
+
+    <script type = "text/javascript" src = "src/Operation.js"></script>
+    <script type = "text/javascript" src = "src/baseOP.js"></script>
+    <script type = "text/javascript" src = "src/Stack.js"></script>
+</html>

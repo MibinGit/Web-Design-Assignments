@@ -1,0 +1,25 @@
+{
+  "user4_todo1" :
+  {
+    "title": "List1",
+    "todoItem": "Go Swimming",
+    "author": "YUAN",
+    "dateProperties": "2018-10-28"
+  },
+
+  "user4_todo2" :
+  {
+    "title": "List2",
+    "todoItem": "Play Basketball",
+    "author": "YUAN",
+    "dateProperties": "2018-10-27"
+  },
+
+  "user4_todo3" :
+  {
+    "title": "List3",
+    "todoItem": "Drink Tea",
+    "author": "YUAN",
+    "dateProperties": "2018-10-26"
+  }
+}

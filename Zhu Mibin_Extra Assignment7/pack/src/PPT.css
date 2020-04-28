@@ -1,0 +1,37 @@
+#ppt
+{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    /* Set the position of the father with a default position */
+    left: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    /* text-align: center; */
+}
+
+.pptpage
+{
+    width: 260px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    /* Set the position of the father with a default position */
+    left: 18px;
+    border: 2px solid rgb(0, 0, 0);
+    /* text-align: center; */
+    margin: 4px;
+}
+
+.pptpage:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: #33a8da;
+
+    transform: translate( 1px, 1px );
+    -webkit-transform: translate( 1px, 1px );
+    -moz-transform: translate( 1px, 1px );
+
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+}

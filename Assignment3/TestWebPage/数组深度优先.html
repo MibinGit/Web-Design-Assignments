@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zhu Mibin_Assignment3_Depth-first Search4</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+          var t = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+          var deepView = function(aTree, iNode)
+          {
+              (iNode in aTree) && (document.write(aTree[iNode] + '<br/>'),
+                                   arguments.callee(aTree, 2 * iNode + 1),
+                                   arguments.callee(aTree, 2 * iNode + 2))
+          }
+          document.write('<h3>Depth-first search</h3>');
+          deepView(t,0);
+      </script>
+  </body>
+</html>

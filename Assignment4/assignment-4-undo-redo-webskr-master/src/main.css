@@ -1,0 +1,70 @@
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul li
+{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #5471b4;
+    font-size: 22px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+}
+
+ul li:hover
+{
+    background: #3f3d46;
+}
+
+ul li.checked
+{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.header
+{
+    background-color: #5471b4;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+button:hover
+{
+    background: #5471b4;
+}
+
+.delete
+{
+    float:right;
+    width:100px;
+    height:25px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.add
+{
+    width:100px;
+    height:36px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.input
+{
+    width:300px;
+    height:30px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 18px;
+}

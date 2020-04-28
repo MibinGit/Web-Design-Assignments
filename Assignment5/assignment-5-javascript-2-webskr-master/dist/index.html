@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "utf-8">
+        <title>WebSkr_Assignment5_Todo List2</title>
+        <script type="text/javascript" src="./bundle.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <div id = "inputDIV" class = "header">
+                <p style = "font-size: 40px;"><b>Todo List</b></p>
+                <input type = "text" id = "username" placeholder = "username" class = "input" readonly="readonly">
+                <input type = "text" id = "title" placeholder = "Title" class = "input">
+                <input type = "text" id = "item" placeholder = "TodoItem" class = "input">
+                <input type = "text" id = "date" placeholder = "Date" class = "input">
+                <button type = "button" onclick = "addTodo()" class = "add">ADD</button>
+            </div>
+        </div>
+
+        <hr size = "5px" noshade = true />
+
+        <div style = "float: left;width:25%;">
+            <ul id = "navigationBar" title = "navigate">
+                <li><a href = "#User1" id = "User1" style = "color: white" onclick = "datarequest(this.id)">1.ZHU</a></li>
+                <li><a href = "#User2" id = "User2" style = "color: white" onclick = "datarequest(this.id)">2.MI</a></li>
+                <li><a href = "#User3" id = "User3" style = "color: white" onclick = "datarequest(this.id)">3.BIN</a></li>
+                <li><a href = "#User4" id = "User4" style = "color: white" onclick = "datarequest(this.id)">4.YUAN</a></li>
+                <li><a href = "#User5" id = "User5" style = "color: white" onclick = "datarequest(this.id)">5.YU</a></li>
+                <li><a href = "#User6" id = "User6" style = "color: white" onclick = "datarequest(this.id)">6.KUN</a></li>
+                <li><a href = "#User7" id = "User7" style = "color: white" onclick = "datarequest(this.id)">7.HE</a></li>
+                <li><a href = "#User8" id = "User8" style = "color: white" onclick = "datarequest(this.id)">8.DING</a></li>
+                <li><a href = "#User9" id = "User9" style = "color: white" onclick = "datarequest(this.id)">9.MING</a></li>
+            </ul>
+        </div>
+
+        <div style = "float: left; width:74%; padding-left: 1%;">
+            <ul id = "mytodoList" title = "newtodolist">
+            </ul>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "user1_todo1" :
+  {
+    "title": "List1",
+    "todoItem": "Do Homework",
+    "author": "ZHU",
+    "dateProperties": "2018-10-22"
+  },
+
+  "user1_todo2" :
+  {
+    "title": "List2",
+    "todoItem": "Do Lab",
+    "author": "ZHU",
+    "dateProperties": "2018-10-24"
+  },
+
+  "user1_todo3" :
+  {
+    "title": "List3",
+    "todoItem": "Go Sleep",
+    "author": "ZHU",
+    "dateProperties": "2018-10-26"
+  }
+}

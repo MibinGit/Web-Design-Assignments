@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function Graph()
+    {
+      var vertices = [];
+      var adjList = new Dictionary();
+      // 图类的其他代码省略...
+      var initializeColor = function()
+      {
+          var color = [];
+          for (var i=0; i<vertices.length; i++)
+          {
+              color[vertices[i]] = 'white';
+          }
+          return color;
+      };
+    }
+
+    this.dfs = function(callback)
+    {
+        var color = initializeColor(); // 将所有顶点初始化为白色
+        for (var i=0; i<vertices.length; i++)
+        {
+            if (color[vertices[i]] === 'white')
+            { // 对每一个没有被访问过的顶点调用dfsVisit方法
+                dfsVisit(vertices[i], color, callback); // {1}
+            }
+        }
+
+        function dfsVisit(u, color, callback)
+        {
+            color[u] = 'grey'; // 将顶点u置为灰，表明访问过但还没有完全探索
+            callback &&　callback(u);　// 执行回调函数
+            var neighbors = adjList.get(u); // 获取顶点u的所有相邻顶点
+            for (var i=0; i<neighbors.length; i++)
+            { // 探索所有相邻顶点
+                var w = neighbors[i];
+                if (color[w] === 'white')
+                { // 如果相邻的顶点没有被访问过，则对其执行dfsVisit方法
+                    dfsVisit(w, color, callback);
+                }
+            }
+            color[u] = 'black'; // 将顶点u置为黑，表明已经完全访问。
+        };
+    };
+
+    graph = new Graph();
+    myVertices = ['A','B','C','D','E','F'];
+    for (i=0; i<myVertices.length; i++)
+    {
+        graph.addVertex(myVertices[i]);
+    }
+    graph.addEdge('A', 'C');
+    graph.addEdge('A', 'D');
+    graph.addEdge('B', 'D');
+    graph.addEdge('B', 'E');
+    graph.addEdge('C', 'F');
+    graph.addEdge('F', 'E');
+    var result = graph.DFS();
+    document.write(result);
+    </script>
+  </body>
+</html>

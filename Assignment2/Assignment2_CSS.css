@@ -1,0 +1,133 @@
+.webhead
+{
+  height: 50px;
+  width: 300px;
+  margin-left: 1050px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: -60px;
+  float: left;
+}
+
+.onerow
+{
+  height: 100px;
+  background: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.onerow:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.onerow_middle
+{
+  height: 100px;
+  background: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  text-align: center;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.onerow_middle:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.onerow_noborder
+{
+  height: 100px;
+  background: rgb(255, 255, 255);
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.oneshort
+{
+  height: 30px;
+  background: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.oneshort:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.onetall
+{
+  height: 324px;
+  background: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  border-left: 5px solid rgb(0, 0, 0);
+}
+
+.onetall:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.tworow
+{
+  height: 202px;
+  background: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.tworow:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.title
+{
+  background: rgba(60, 58, 47, 0.55);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  text-align: center;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.title:hover
+{
+  color: rgba(255, 0, 0, 1);
+}
+
+.bottom
+{
+  height: 50px;
+  width: 1228px;
+  margin-left: 0px;
+  margin-top: -20px;
+  margin-right: 0px;
+  float: left;
+}

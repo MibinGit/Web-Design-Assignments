@@ -1,0 +1,82 @@
+#father
+{
+    width: 600px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    /* Set the position of the father with a default position */
+    left: 318px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.picture
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* Set the position of the box with a specified coordinates */
+    left: 0;
+    top: 0;
+    /* Set the position of the container of the img to left-top corner */
+    background-color: rgb(255, 255, 255);
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    /* Set the style of cursor to move */
+}
+
+.scalepicture
+{
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    /* Trim photo content when the size is out of the border */
+    cursor: se-resize;
+    /* Set the style of cursor to se-resize */
+    position: absolute;
+    /* Set the position of the scale with a specified coordinates */
+    right: 0;
+    bottom: 0;
+    /* Set the position of the scale to right-bottom corner */
+    background-color: rgb(18, 138, 226);
+}
+
+section
+{
+    margin: 0 auto;
+    /* Set the section part's margin as 0 that can feat to any situation */
+}
+
+#img
+{
+    /* max-height: 100px;
+    max-width: 100px; */
+    /* Do not need to set the height and width of the picture as it can be same as the box */
+}
+
+.btn
+{
+    /* width: 150px;
+    background-color: rgb(18, 138, 226);
+    display: block; */
+    /* Block element have line breaks at the start and the end of this element */
+    /* color: #fff;
+    padding: 10px 15px; */
+    /* The top and bottom padding is 10px and the left and right padding is 15px */
+    /* font: 20px Helvetica;
+    text-decoration: none; */
+    /* Default text with no decoration */
+    /* text-align: center;
+    margin: 1px 0; */
+}
+
+#file
+{
+    display: none;
+    /* Set the display of the file part as none cause the style of file is not beautiful */
+    /* color: rgb(255, 255, 255); */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Zhu Mibin_Extra Credit Assignment</title>
+    </head>
+
+    <body id = "main">
+        <div id = "addtoolbar">
+        <div class = "title"> Elements Toolbar </div>
+            <button id = "addphoto" href = "#" class = "btn" onclick = "addPicture()"> Add Photo </button>
+            <button id = "addtext" href = "#" class = "btn" onclick = "addText()"> Add Text </button>
+        </div>
+
+        <div id = "texttoolbar" style = "display: none">
+        <div class = "title"> Text Formatting Toolbar </div>
+            <button id = "bold" onclick = "makeBold()"> Bold </button>
+            <button id = "italic" onclick = "makeItalic()"> Italic </button>
+            <button id = "underline" onclick = "doUnderline()"> Underline </button>
+            <button id = "left" onclick = "justifyLeft()"> Justify Left </button>
+            <button id = "middle" onclick = "justifyCenter()"> Justify Middle </button>
+            <button id = "right" onclick = "justifyRight()"> Justify Right </button>
+            <button id = "closebar" onclick = "closeToolbar()"> Close Text Toolbar </button>
+        </div>
+
+        <div id = "ppttoolbar">
+        <div class = "title"> PPT Toolbar </div>
+            <button id = "addPPT" onclick = "addPPT()"> Add PPT Page </button>
+            <button id = "deletePPT" onclick = "deletePPT()"> Delete PPT Page </button>
+            <button id = "closeBoard" onclick = "deleteFather()"> Close Board </button>
+        </div>
+
+        <div id = "ppt">
+            <div id = "pptpage1" name = "pptpage" class = "pptpage" onclick = "addFather()">
+                Page1
+            </div>
+        </div>
+
+        <div id = "father" style = "display: none">
+
+        </div>
+        <script type="text/javascript" src = "./bundle.js"></script>
+    </body>
+</html>
